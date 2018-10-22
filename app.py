@@ -10,11 +10,11 @@ app = dash.Dash(__name__)
 server = app.server
 
 # read data for tables (one df per table)
-df_mr_var = pd.read_csv('/Users/malshri/Desktop/test1_2.csv')
-df_mr_ear = pd.read_csv('/Users/malshri/Desktop/ear.csv')
-df_mr_ear_table = pd.read_csv('/Users/malshri/Desktop/ear_table.csv').dropna(how='all')
-df_mr_other = pd.read_csv('/Users/malshri/Desktop/test8_3.csv')
-df_cr_metrics = pd.read_csv('/Users/malshri/Desktop/capital1.csv')
+df_mr_var = pd.read_csv('test1_2.csv')
+df_mr_ear = pd.read_csv('ear.csv')
+df_mr_ear_table = pd.read_csv('ear_table.csv').dropna(how='all')
+df_mr_other = pd.read_csv('test8_3.csv')
+df_cr_metrics = pd.read_csv('capital1.csv')
 
 app.config.suppress_callback_exceptions = True
 
